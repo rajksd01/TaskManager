@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function TaskInput({ list }) {
+function TaskInput({ list, id }) {
   const [task, setTask] = useState("Enter task");
   const [date, setDate] = useState(new Date());
 
@@ -14,7 +14,7 @@ function TaskInput({ list }) {
   };
   const handleFormSubmit = (e) => {
     e.preventDefault();
-    list.push({ task: task, date: date.toDateString() });
+    list.push({ taskId: id, taskDetails: task, date: date.toDateString() });
     console.log("Task added");
     console.log(list);
     setTask("Add Task");
