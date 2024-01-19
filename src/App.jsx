@@ -9,7 +9,7 @@ function App() {
     <>
       Hello From App
       <TaskInput list={taskList} id={taskId} />;
-      <TaskList list={taskList} />
+      <TaskList listItems={taskList} />
     </>
   );
 }
