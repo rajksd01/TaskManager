@@ -1,6 +1,6 @@
 import React from "react";
 
-function TaskList({ <i className="far fa-assistive-listening-systems"></i> }) {
+function TaskList({ listItems }) {
   return (
     <div>
       {list.map((task) => {
